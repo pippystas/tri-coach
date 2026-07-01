@@ -1,6 +1,8 @@
 import datetime as dt
-import json, requests, os
+import json, requests, os, logging
 from dotenv import set_key
+
+logger = logging.getLogger(__name__)
 
 url_strava_activities = "https://www.strava.com/api/v3/athlete/activities"
 url_strava_token = "https://www.strava.com/oauth/token"
@@ -35,12 +37,14 @@ def get_workout_details(workout_id):
     return plan[workout_id[0:3]][workout_id[3:]]
 
 def get_activities(count=1):
+    logger.info("User requested activities.")
     STRAVA_ACCESS_TOKEN = get_strava_access_token()
     response = requests.get(
         url_strava_activities,
         headers={"Authorization": f"Bearer {STRAVA_ACCESS_TOKEN}"},
         params={"per_page": count}
     )
+    logger.info("Strava returned with %i", response.status_code)
     return trim_strava_activities(response.json())
 
 def get_strava_access_token():
@@ -54,6 +58,7 @@ def get_strava_access_token():
     ).json()
     set_key(".env", "STRAVA_ACCESS_TOKEN", response['access_token'])
     set_key(".env", "STRAVA_REFRESH_TOKEN", response['refresh_token'])
+    logger.info("New access token generated")
     return response['access_token']
 
 def trim_strava_activities(activities):
@@ -64,6 +69,7 @@ def trim_strava_activities(activities):
     return trimmed
 
 async def get_brief(workout, activities, client, sleep, hrv, skipped_workouts):
+    logger.info("User sent morning brief request to Claude")
     return await client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=512,
@@ -86,6 +92,7 @@ async def get_brief(workout, activities, client, sleep, hrv, skipped_workouts):
     )
 
 def get_garmin_data(fetch_fn, key, fields):
+    logger.info("Requested %s data from garmin", key)
     today = dt.date.today()
     data = fetch_fn(today.isoformat())
     data = data[key]
@@ -100,6 +107,7 @@ def add_skip(workout, reason):
     calendar['skipped'].append({"workout": workout, "reason": reason})
     with open('calendar.json', 'w') as file:
         json.dump(calendar, file)
+    logger.info("User skipped a workout")
 
 def resolve_skips(activities):
     completed_workouts = []

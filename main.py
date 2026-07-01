@@ -1,8 +1,21 @@
-import os
+import os, logging
 from dotenv import load_dotenv
-load_dotenv()
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, CommandHandler
+
+load_dotenv()
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(message)s",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler("bot.log")
+    ]
+)
+
 from commands import set_race, today, respond, skip
+
+logger = logging.getLogger(__name__)
 
 if __name__ == "__main__":
     TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
