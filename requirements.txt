@@ -1,0 +1,5 @@
+python-telegram-bot==22.8
+anthropic
+garminconnect
+requests
+python-dotenv

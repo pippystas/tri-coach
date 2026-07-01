@@ -1,0 +1,446 @@
+{
+  "W01": {
+    "D1": {
+      "name": "Easy Run",
+      "type": "run",
+      "description": "Light mobility work, 5-10 minutes. Run, easy effort, 40 minutes. Cool down, 5-10 minutes. Stretch, 5 minutes. Aim to hold a consistent heart rate and pace \u2014 don't go out too hard. You should finish feeling good."
+    },
+    "D2": {
+      "name": "Steady Swim",
+      "type": "swim",
+      "description": "Don't worry about speed, work on technique and count your strokes on every third 50m of your 200s. Write it down to compare to future sessions."
+    },
+    "D3": {
+      "name": "Easy Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes at 90 RPM. Bike, easy effort, 5 minutes at 80 RPM. Bike, easy effort, 55 minutes at 90-95 RPM. Bike, very easy, 5 minutes. Cool down, 5-10 minutes. You can do this on road or trainer. Focus on smooth pedaling."
+    },
+    "D4": {
+      "name": "Tech Swim",
+      "type": "swim",
+      "description": "Try doing 'catch up' as your drill and alternate your kicking with and without a board."
+    },
+    "D5": {
+      "name": "Easy Run",
+      "type": "run",
+      "description": "Run, easy effort, 40 minutes. Cool down, 5-10 minutes. Optional: Work on weakest discipline \u2014 Easy Bike 70 or Steady Swim 1.8. Work on technique. Don't worry about speed."
+    },
+    "D6": {
+      "name": "Bike/Run Brick",
+      "type": "brick",
+      "description": "Bike, easy effort, 5 minutes, 90 RPM. Bike, easy effort, 5 minutes, 80 RPM. Bike, easy effort, 55 minutes. Bike, very easy, 5 minutes. Cool down, 5-10 minutes. Remember to hydrate during the session. Straight off the bike and into the run: Run, easy effort, 30 minutes. Cool down, 5-10 minutes. Keep RPM up when running off bike \u2014 aim for around 93-95 RPM."
+    },
+    "D7": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Moveable day off. Take the day off to recover from your week. Ideally rest on this day, but move your rest day if something else works better with your week. Do some light stretching or get a massage if you can."
+    }
+  },
+  "W02": {
+    "D1": {
+      "name": "Steady State Swim",
+      "type": "swim",
+      "description": "Count your strokes on every third 50m of your 200s and aim to swim the same speed as last week taking 1 or 2 fewer strokes."
+    },
+    "D2": {
+      "name": "Long Run",
+      "type": "run",
+      "description": "Run, easy effort, 60 minutes. Cool down, 5-10 minutes. Stretch, 5-10 minutes. Keep intensity even throughout the session. This will help build your base endurance which will support your higher intensity work later on. Keep RPM high and stand tall."
+    },
+    "D3": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Moveable day off. Ideally rest on this day, but move your rest day if something else works better with your week."
+    },
+    "D4": {
+      "name": "Test Swim",
+      "type": "swim",
+      "description": "Don't go out too hard. Take your time and heart rate at the end of the time trial swim."
+    },
+    "D5": {
+      "name": "Build Run",
+      "type": "run",
+      "description": "Core strength exercises, 15 minutes. Run, easy effort, 20 minutes. Run, moderate effort, 15 minutes. Run, med-high effort, 10 minutes. Run, easy effort, 5 minutes. Cool down, 5-10 minutes. Stretch, 10 minutes. Build your pace throughout the session and maintain your form."
+    },
+    "D6": {
+      "name": "Bike/Run Brick",
+      "type": "brick",
+      "description": "Bike, easy effort, 55 minutes. Bike, moderate effort, 20 minutes. Repeat 2 times. Cool down, 5-10 minutes. Keep cadence around 90-95 RPM. Ride on hilly terrain. Stay in seat over hills and pedal smoothly. Aim for 30-50 grams of carbs per hour. Straight off the bike and into the run: Run, easy run, 20 minutes. Cool down, 5-10 minutes."
+    },
+    "D7": {
+      "name": "Steady Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes, 95 RPM. Bike, single leg, easy effort, 3 minutes, 90 RPM, swap legs every 30 seconds. Bike, moderate effort, 8 minutes, 75 RPM. Bike, moderate effort, 2 minutes, 85 RPM. Repeat 3 times. Bike, easy effort, 5 minutes. Cool down, 5-10 minutes. Do this session on the trainer or a set of rollers."
+    }
+  },
+  "W03": {
+    "D1": {
+      "name": "Tempo Swim",
+      "type": "swim",
+      "description": "Aim for your target race speed on the 300s."
+    },
+    "D2": {
+      "name": "Tech Run",
+      "type": "run",
+      "description": "Run, easy effort, 10 minutes. Run, med-high effort, 2 minutes. Run, easy effort, 1 minute. Repeat 6 times. Run, easy effort, 8 minutes. Cool down, 5-10 minutes. Work on technique during the pace variation. Maintain high RPM, stand tall and pick your knees up whether running fast or slow."
+    },
+    "D3": {
+      "name": "Test Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes, 85 RPM. Bike, moderate effort, 5 minutes, 90 RPM. Bike, med-high effort, 5 minutes, 95 RPM. Bike, easy effort, 5 minutes. Bike, time trial, best effort, 16km \u2014 record time and heart rate. Bike, easy effort, 10 minutes. Cool down, 5-10 minutes. Try to use the same location for subsequent tests."
+    },
+    "D4": {
+      "name": "Tech Swim",
+      "type": "swim",
+      "description": "Work on your recovery and catch at front of stroke."
+    },
+    "D5": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Moveable day off. Ideally rest on this day. Do some light stretching or get a massage if you can."
+    },
+    "D6": {
+      "name": "Build Run",
+      "type": "run",
+      "description": "Run, easy effort, 20 minutes. Run, moderate effort, 15 minutes. Run, med-high effort, 10 minutes. Run, easy effort, 5 minutes. Cool down, 5-10 minutes. Stretch, 10 minutes. Aim to maintain the same pace as the build run the week before but slightly longer."
+    },
+    "D7": {
+      "name": "Long Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 55 minutes. Bike, moderate effort, 20 minutes. Repeat 2 times. Cool down, 5-10 minutes. Long easy to steady ride on flat to hilly terrain. Focus on cadence 90-95 and efficiency. Remember to eat and drink during the ride. Ride with a group if you can."
+    }
+  },
+  "W04": {
+    "D1": {
+      "name": "Easy Swim",
+      "type": "swim",
+      "description": "Use this session to loosen the legs from the past couple of days. Relax in the water and work on your technique."
+    },
+    "D2": {
+      "name": "Hard Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes, 85 RPM. Bike, moderate effort, 5 minutes, 90 RPM. Bike, med-high effort, 5 minutes, 95 RPM. Bike, easy effort, 5 minutes. Bike, high effort, 5 minutes, 95 RPM. Bike, easy effort, 5 minutes, 85 RPM. Repeat 5 times. Bike, easy effort, 10 minutes, 90 RPM. Cool down, 5-10 minutes."
+    },
+    "D3": {
+      "name": "Easy Run",
+      "type": "run",
+      "description": "Run, easy effort, 40 minutes. Cool down, 5-10 minutes. Optional: Work on weakest discipline \u2014 Easy Bike 70 or Steady Swim 1.8."
+    },
+    "D4": {
+      "name": "Test Run",
+      "type": "run",
+      "description": "Run, easy effort, 5 minutes. Run, moderate effort, 3 minutes. Run, med-high effort, 2 minutes. Run, easy effort, 5 minutes. Run, time trial, best effort, 3km \u2014 record time and heart rate. Run, easy effort, 10 minutes. Cool down, 5-10 minutes. Run on a flat surface. Don't go out too hard, aim to build through the effort."
+    },
+    "D5": {
+      "name": "Steady Swim",
+      "type": "swim",
+      "description": "Work on your stroke during the pull set, then maintain the form when you introduce your kick."
+    },
+    "D6": {
+      "name": "Bike/Run Brick + Tempo Run",
+      "type": "brick",
+      "description": "Bike, easy effort, 5 minutes, 85 RPM. Bike, moderate effort, 5 minutes, 90 RPM. Bike, med-high effort, 5 minutes, 95 RPM. Bike, easy effort, 5 minutes. Bike, med-high effort, 40 minutes, 95 RPM. Bike, easy effort, 10 minutes. Straight off the bike and into the run: Run, med-high effort, 20 minutes. Run, easy effort, 10 minutes. Cool down, 5-10 minutes. Work on form during your run."
+    },
+    "D7": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Moveable day off. Try not to do back-to-back hard sessions. Work on your nutrition \u2014 especially recovery after hard sessions: carbs and protein within 30 minutes of finishing."
+    }
+  },
+  "W05": {
+    "D1": {
+      "name": "Tempo Swim",
+      "type": "swim",
+      "description": "Aim for your target race speed on the 300s."
+    },
+    "D2": {
+      "name": "Easy Run",
+      "type": "run",
+      "description": "Light mobility work, 5-10 minutes. Run, easy effort, 40 minutes. Cool down, 5-10 minutes. Stretch, 5 minutes. Aim to hold a consistent heart rate and pace. You should finish feeling good."
+    },
+    "D3": {
+      "name": "Steady Swim",
+      "type": "swim",
+      "description": "Aim to hold the same speeds relative to the Steady Swim session last week where you were doing 100m reps."
+    },
+    "D4": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Rest day. Consider getting a proper bike fit if you haven't \u2014 it improves comfort, efficiency, and your run off the bike."
+    },
+    "D5": {
+      "name": "Hard Run",
+      "type": "run",
+      "description": "Run, easy effort, 5 minutes. Run, moderate effort, 5 minutes. Run, med-high effort, 5 minutes. Recovery run, easy effort, 2 minutes. Run, high effort, 6 minutes. Recovery run, easy effort, 2 minutes. Repeat 3 times. Run, easy effort, 9 minutes. Cool down, 5-10 minutes. Aim to be as fast on your third rep as your first. Keep cadence high even when tiring."
+    },
+    "D6": {
+      "name": "Hilly Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 30 minutes, 90 RPM. Bike, moderate effort, 20 minutes, 75 RPM. Repeat 3 times. Cool down, 5-10 minutes. Long ride over hilly terrain. Pedal smoothly over hills. Remember to hydrate and fuel."
+    },
+    "D7": {
+      "name": "Steady OW Swim",
+      "type": "swim",
+      "description": "Swim in open water to start getting used to that environment. Swim, easy effort, 5 minutes. Swim, breathe bilaterally if you can, moderate effort, 8 minutes. Recovery, 2 minutes. Repeat 3 times. Swim and kick, easy effort, 5 minutes. Nice and relaxed. Enjoy!"
+    }
+  },
+  "W06": {
+    "D1": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Rest day. Recovery week. Massage or light stretching. Focus on glutes, quads and hamstrings."
+    },
+    "D2": {
+      "name": "Tech Swim",
+      "type": "swim",
+      "description": "See if you can get a swim coach to look at your stroke and give you tips on your technique."
+    },
+    "D3": {
+      "name": "Easy Run",
+      "type": "run",
+      "description": "Light mobility work, 5-10 minutes. Run, easy effort, 50 minutes. Cool down, 5-10 minutes. Keep working on your technique even when running slowly. Don't get sloppy \u2014 pick up knees, stand tall, keep RPM around 93-95."
+    },
+    "D4": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Rest day. Enjoy sleeping in and do some light stretching or yoga in the evening."
+    },
+    "D5": {
+      "name": "Easy Run",
+      "type": "run",
+      "description": "Run, easy effort, 40 minutes. Cool down, 5-10 minutes. Optional: Work on weakest discipline \u2014 Easy Bike 70 or Steady Swim 1.8."
+    },
+    "D6": {
+      "name": "Bike/Run Brick + Tempo Run",
+      "type": "brick",
+      "description": "Bike, easy effort, 5 minutes, 85 RPM. Bike, moderate effort, 5 minutes, 90 RPM. Bike, med-high effort, 5 minutes, 95 RPM. Bike, easy effort, 5 minutes. Bike, med-high effort, 40 minutes, 95 RPM. Bike, easy effort, 10 minutes. Straight off the bike and into the run: Run, med-high effort, 20 minutes. Run, easy effort, 10 minutes. Cool down, 5-10 minutes. Work on your form during the run."
+    },
+    "D7": {
+      "name": "Long Run",
+      "type": "run",
+      "description": "Run, easy effort, 80 minutes. Cool down, 5-10 minutes. Stretch, 5-10 minutes. Keep intensity even throughout. Keep RPM high, stand tall. Congratulations \u2014 you're halfway through your preparation. Stay consistent."
+    }
+  },
+  "W07": {
+    "D1": {
+      "name": "Easy Swim",
+      "type": "swim",
+      "description": "Use this session to loosen the legs. Relax in the water and work on your technique."
+    },
+    "D2": {
+      "name": "Fartlek Run",
+      "type": "run",
+      "description": "Run, easy effort, 5 minutes. Run, moderate effort, 4 minutes. Run, med-high effort, 3 minutes. Recovery run, 2 minutes. Run, med-high effort, 2 minutes. Run, easy effort, 1 minute. Run, high effort, 1 minute. Run, easy effort, 1 minute. Repeat 6 times. Run, easy effort, 6 minutes. Cool down, 5-10 minutes. Make sure you have your recovery nutrition in place before starting this one."
+    },
+    "D3": {
+      "name": "Easy Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes at 90 RPM. Bike, easy effort, 5 minutes at 80 RPM. Bike, easy effort, 55 minutes at 90-95 RPM. Bike, very easy, 5 minutes. Cool down, 5-10 minutes. Focus on smooth pedaling."
+    },
+    "D4": {
+      "name": "Tempo Swim",
+      "type": "swim",
+      "description": "Aim for your target race speed on the 300s."
+    },
+    "D5": {
+      "name": "Hilly Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 30 minutes, 90 RPM. Bike, moderate effort, 20 minutes, 75 RPM. Repeat 3 times. Cool down, 5-10 minutes. Stay in the seat over the hills and practice pedaling in a full circle \u2014 no dead spots."
+    },
+    "D6": {
+      "name": "Long Run",
+      "type": "run",
+      "description": "Run, easy effort, 80 minutes. Cool down, 5-10 minutes. Slight increase in length. Keep working on technique. Take a couple of gels \u2014 one at 20 minutes, one at 40 minutes."
+    },
+    "D7": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Moveable day off. Ideally rest on this day. Do some light stretching or get a massage."
+    }
+  },
+  "W08": {
+    "D1": {
+      "name": "Steady Swim",
+      "type": "swim",
+      "description": "Slightly longer reps to improve endurance. Keep counting strokes every third 50m to check you are holding your form together."
+    },
+    "D2": {
+      "name": "Steady Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes, 95 RPM. Bike, single leg, easy effort, 3 minutes, 90 RPM, swap legs every 30 seconds. Bike, moderate effort, 10 minutes, 75 RPM. Bike, moderate effort, 2 minutes, 85 RPM. Repeat 4 times. Bike, easy effort, 5 minutes. Cool down, 5-10 minutes. Do this session on the trainer or a set of rollers."
+    },
+    "D3": {
+      "name": "Build Run",
+      "type": "run",
+      "description": "Run, easy effort, 20 minutes. Run, moderate effort, 15 minutes. Run, med-high effort, 10 minutes. Run, easy effort, 5 minutes. Cool down, 5-10 minutes. Use same course as in week 3. You should see an increase in distance for same effort."
+    },
+    "D4": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Moveable day off. Do some light stretching or get a massage. Start thinking about race equipment \u2014 now is a good time to get organised."
+    },
+    "D5": {
+      "name": "Tempo Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes, 85 RPM. Bike, moderate effort, 5 minutes, 90 RPM. Bike, med-high effort, 5 minutes, 95 RPM. Bike, easy effort, 5 minutes. Bike, med-high effort, 10 minutes, 95 RPM. Bike, easy effort, 2 minutes, 85 RPM. Repeat 5 times. Bike, easy effort, 10 minutes, 90 RPM. Cool down, 5-10 minutes."
+    },
+    "D6": {
+      "name": "Steady OW Swim",
+      "type": "swim",
+      "description": "Swim in open water. Swim, easy effort, 5 minutes. Swim, moderate effort, 1800m. Swim and kick, easy effort, 10 minutes. Use the goggles and wetsuit you intend to race in. Practice taking your wetsuit off quickly at the end."
+    },
+    "D7": {
+      "name": "Steady Run",
+      "type": "run",
+      "description": "Run, moderate effort, 70 minutes. Cool down, 5-10 minutes. Stretch, 5-10 minutes. Slight increase in intensity \u2014 getting used to pushing at higher intensity for longer. Keep RPM high throughout and stand tall."
+    }
+  },
+  "W09": {
+    "D1": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Moveable day off. Recovery and testing week \u2014 take it easy."
+    },
+    "D2": {
+      "name": "Easy Run",
+      "type": "run",
+      "description": "Light mobility work, 5-10 minutes. Run, easy effort, 40 minutes. Cool down, 5-10 minutes. If legs are sore, you could do this session as an aqua jog at the pool."
+    },
+    "D3": {
+      "name": "Test Swim",
+      "type": "swim",
+      "description": "Compare with the test in week 2. Control your intensity to start."
+    },
+    "D4": {
+      "name": "Easy Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes, 90 RPM. Bike, easy effort, 5 minutes, 80 RPM. Bike, max effort, 15 seconds, 100-105 RPM. Bike, easy effort, 4 minutes 45 seconds, 90 RPM. Repeat 8 times. Bike, easy effort, 10 minutes. Cool down, 5-10 minutes. The sprints will help to wake up your legs."
+    },
+    "D5": {
+      "name": "Build Swim",
+      "type": "swim",
+      "description": "Hold your technique together as you increase your speed. Remember to relax your arm during the recovery phase."
+    },
+    "D6": {
+      "name": "Easy Run",
+      "type": "run",
+      "description": "Run, easy effort, 40 minutes. Cool down, 5-10 minutes. Optional: Work on weakest discipline \u2014 Easy Bike 70 minutes or Steady Swim 1.8."
+    },
+    "D7": {
+      "name": "Test Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes, 85 RPM. Bike, moderate effort, 5 minutes, 90 RPM. Bike, med-high effort, 5 minutes, 95 RPM. Bike, easy effort, 5 minutes. Bike, time trial, best effort, 16km \u2014 record time and heart rate. Bike, easy effort, 10 minutes. Cool down, 5-10 minutes. Use the same location as your test in week 3."
+    }
+  },
+  "W10": {
+    "D1": {
+      "name": "Tech Swim",
+      "type": "swim",
+      "description": "Work on your recovery and catch at the front of your stroke."
+    },
+    "D2": {
+      "name": "Easy Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes, 90 RPM. Bike, easy effort, 5 minutes, 80 RPM. Bike, max effort, 15 seconds, 100-105 RPM. Bike, easy effort, 4 minutes 45 seconds, 90 RPM. Repeat 8 times. Bike, easy effort, 10 minutes. Cool down, 5-10 minutes. Can be done on road or trainer. The sprints will help wake up your legs."
+    },
+    "D3": {
+      "name": "Test Run",
+      "type": "run",
+      "description": "Run, easy effort, 5 minutes. Run, moderate effort, 3 minutes. Run, med-high effort, 2 minutes. Run, easy effort, 5 minutes. Run, time trial, best effort, 3km \u2014 record time and heart rate. Run, easy effort, 10 minutes. Cool down, 5-10 minutes. Use the same location as week 4 test. Don't go out too hard, pace your effort."
+    },
+    "D4": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Rest day. Enjoy sleeping in and do some light stretching or yoga in the evening. Book your bike in to be serviced now, so it's not a last minute rush before you race."
+    },
+    "D5": {
+      "name": "Tempo Swim",
+      "type": "swim",
+      "description": "Use the 1500m rep to practice your pacing for your race. Visualize yourself swimming in the event."
+    },
+    "D6": {
+      "name": "Race Sim Brick + Tempo Run",
+      "type": "brick",
+      "description": "Race simulation brick \u2014 use race kit. Bike, easy effort, 5 minutes, 85 RPM. Bike, moderate effort, 5 minutes, 90 RPM. Bike, med-high effort, 5 minutes, 95 RPM. Bike, easy effort, 5 minutes. Bike, med-high effort, 30km, 95 RPM. Bike, easy effort, 10 minutes. Straight off the bike into the run: Run, med-high effort, 7km. Run, easy effort, 10 minutes. Cool down, 5-10 minutes. Use this session to practice pacing for the race."
+    },
+    "D7": {
+      "name": "Easy Run",
+      "type": "run",
+      "description": "Run, easy effort, 40 minutes. Cool down, 5-10 minutes. Optional: If still feeling tired, take another day off. Otherwise, work on your weakest discipline."
+    }
+  },
+  "W11": {
+    "D1": {
+      "name": "Fartlek Run",
+      "type": "run",
+      "description": "Run, easy effort, 5 minutes. Run, moderate effort, 4 minutes. Run, med-high effort, 3 minutes. Recovery run, 2 minutes. Run, med-high effort, 2 minutes. Run, easy effort, 1 minute. Run, high effort, 1 minute. Run, easy effort, 1 minute. Repeat 6 times. Run, easy effort, 6 minutes. Cool down, 5-10 minutes. Don't force the speed \u2014 focus on technique and it will come naturally."
+    },
+    "D2": {
+      "name": "Easy Swim",
+      "type": "swim",
+      "description": "Longer reps prepare you for your race. If racing in a wetsuit, use it for part or all of this session."
+    },
+    "D3": {
+      "name": "Easy Run",
+      "type": "run",
+      "description": "Run, easy effort, 40 minutes. Cool down, 5-10 minutes. Optional: If still tired, take another day off. Otherwise, work on your weakest discipline."
+    },
+    "D4": {
+      "name": "Hard Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 5 minutes, 85 RPM. Bike, moderate effort, 5 minutes, 90 RPM. Bike, med-high effort, 5 minutes, 95 RPM. Bike, easy effort, 5 minutes. Bike, high effort, 3 minutes, 95 RPM. Bike, easy effort, 2 minutes, 85 RPM. Bike, max effort, 30 seconds, 100 RPM. Bike, easy effort, 2 minutes, 85 RPM. Repeat 4 times. Bike, easy effort, 10 minutes, 90 RPM. Cool down, 5-10 minutes."
+    },
+    "D5": {
+      "name": "Tempo Swim",
+      "type": "swim",
+      "description": "Use the 1500m rep to practice your pacing for your race. Visualize yourself swimming in the event."
+    },
+    "D6": {
+      "name": "Bike/Run Brick + Tempo Run",
+      "type": "brick",
+      "description": "Bike, easy effort, 5 minutes, 85 RPM. Bike, moderate effort, 5 minutes, 90 RPM. Bike, med-high effort, 5 minutes, 95 RPM. Bike, easy effort, 5 minutes. Bike, med-high effort, 30 minutes, 95 RPM. Off the bike and straight into the run. Practice pacing, use race equipment. Run, med-high effort, 10 minutes. Run, easy effort, 5 minutes. Repeat 2 times. Cool down, 5-10 minutes."
+    },
+    "D7": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Rest day. All the hard work is done now. Start doing some visualization of your race to mentally prepare."
+    }
+  },
+  "W12": {
+    "D1": {
+      "name": "Max Swim",
+      "type": "swim",
+      "description": "Final swim session. Race pace efforts. Feel the speed."
+    },
+    "D2": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Rest day. Light stretching or massage. Write out a timeline from the evening before the race to race start \u2014 it helps you relax."
+    },
+    "D3": {
+      "name": "Hard Bike",
+      "type": "bike",
+      "description": "Bike, easy effort, 3 minutes, 85 RPM. Bike, moderate effort, 3 minutes, 90 RPM. Bike, med-high, 5 minutes, 95 RPM. Bike, easy effort, 3 minutes. Bike, high effort, 2 minutes, 95 RPM. Bike, easy effort, 1 minute, 85 RPM. Bike, max effort, 30 seconds, 100 RPM. Bike, easy effort, 2 minutes, 85 RPM. Bike, easy effort, 5 minutes, 90 RPM. Cool down, 5-10 minutes."
+    },
+    "D4": {
+      "name": "Rest",
+      "type": "rest",
+      "description": "Rest day. Start organizing all your race kit in one place. Take spares of essential equipment \u2014 goggles, laces, inner tubes, tire."
+    },
+    "D5": {
+      "name": "Pick Up Run",
+      "type": "run",
+      "description": "Run, easy effort, 5 minutes. Run, high effort, 30 seconds. Run, moderate effort, 90 seconds. Repeat 5 times. Run, easy effort, 5 minutes. Cool down, 5-10 minutes. Run on a soft surface in race shoes. Don't force the pace \u2014 you should be feeling good, let the speed come naturally."
+    },
+    "D6": {
+      "name": "Easy Swim + Easy Bike",
+      "type": "brick",
+      "description": "Easy Swim: short, relaxed, race prep. Easy Bike: Z2, 20 minutes, 95 RPM. Use the bike ride just to check gears and brakes \u2014 make sure everything works. Try to do both workouts in the morning and relax in the evening."
+    },
+    "D7": {
+      "name": "RACE DAY",
+      "type": "race",
+      "description": "Race Day! Good luck! Get there with plenty of time to spare. Use your Garmin as a guide but race on feel too. HR can be higher than normal due to adrenaline. Aim to even or negative split through each leg, just like you practiced. Most of all \u2014 enjoy yourself!"
+    }
+  }
+}
