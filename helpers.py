@@ -1,5 +1,6 @@
 import datetime as dt
 import json, requests, os, logging
+from typing import Callable
 from dotenv import set_key
 
 logger = logging.getLogger(__name__)
@@ -7,7 +8,7 @@ logger = logging.getLogger(__name__)
 url_strava_activities = "https://www.strava.com/api/v3/athlete/activities"
 url_strava_token = "https://www.strava.com/oauth/token"
 
-def generate_calendar(race_date):
+def generate_calendar(race_date: str) -> dict[str, str]:
     today = dt.date.today()
     date = dt.date.fromisoformat(race_date)
     d = dt.timedelta(days=1)
@@ -22,7 +23,7 @@ def generate_calendar(race_date):
     
     return schedule
 
-def get_workout_id():
+def get_workout_id() -> str | None:
     today = dt.date.today()
     try:
         with open('calendar.json', 'r') as file:
@@ -31,12 +32,12 @@ def get_workout_id():
         return None
     return calendar['schedule'][str(today)]
 
-def get_workout_details(workout_id):
+def get_workout_details(workout_id: str) -> dict:
     with open('plan.json', 'r') as file:
         plan = json.load(file)
     return plan[workout_id[0:3]][workout_id[3:]]
 
-def get_activities(count=1):
+def get_activities(count: int = 1) -> list[dict]:
     logger.info("User requested activities.")
     STRAVA_ACCESS_TOKEN = get_strava_access_token()
     response = requests.get(
@@ -47,7 +48,7 @@ def get_activities(count=1):
     logger.info("Strava returned with %i", response.status_code)
     return trim_strava_activities(response.json())
 
-def get_strava_access_token():
+def get_strava_access_token() -> str:
     response = requests.post(
         url_strava_token, data={
             "refresh_token": os.getenv("STRAVA_REFRESH_TOKEN"),
@@ -61,7 +62,7 @@ def get_strava_access_token():
     logger.info("New access token generated")
     return response['access_token']
 
-def trim_strava_activities(activities):
+def trim_strava_activities(activities: list[dict]) -> list[dict]:
     fields = ["name", "type", "distance", "moving_time", "average_heartrate", "suffer_score", "start_date", "average_speed"]
     trimmed = []
     for activity in activities:
@@ -91,7 +92,7 @@ async def get_brief(workout, activities, client, sleep, hrv, skipped_workouts):
         )}]
     )
 
-def get_garmin_data(fetch_fn, key, fields):
+def get_garmin_data(fetch_fn: Callable, key: str, fields: list[str]) -> dict:
     logger.info("Requested %s data from garmin", key)
     today = dt.date.today()
     data = fetch_fn(today.isoformat())
@@ -99,17 +100,17 @@ def get_garmin_data(fetch_fn, key, fields):
     trimmed = {field: data.get(field) for field in fields}
     return trimmed
 
-def add_skip(workout, reason):
+def add_skip(workout_id: str, reason: str) -> None:
     with open('calendar.json', 'r') as file:
         calendar = json.load(file)
     if 'skipped' not in calendar:
         calendar['skipped'] = []
-    calendar['skipped'].append({"workout": workout, "reason": reason})
+    calendar['skipped'].append({"workout": workout_id, "reason": reason})
     with open('calendar.json', 'w') as file:
         json.dump(calendar, file)
     logger.info("User skipped a workout")
 
-def resolve_skips(activities):
+def resolve_skips(activities: list[dict]) -> list[dict]:
     completed_workouts = []
     with open('calendar.json', 'r') as file:
         calendar = json.load(file)
