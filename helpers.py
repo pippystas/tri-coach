@@ -26,7 +26,7 @@ def get_workout_id():
         with open('calendar.json', 'r') as file:
             calendar = json.load(file)
     except FileNotFoundError:
-        return 1
+        return None
     return calendar['schedule'][str(today)]
 
 def get_workout_details(workout_id):
