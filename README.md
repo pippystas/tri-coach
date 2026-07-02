@@ -10,6 +10,7 @@ Thank you for stopping by - Pippy
 
 - `/today` — morning brief with today's planned workout, recovery analysis from last night's sleep and HRV, and notes on recent training load. Seeds a conversation so follow-up chat has full context.
 - `/skip <reason>` — logs a skipped workout. On the next `/today`, the bot checks Strava for makeup activities and clears resolved skips automatically. Unresolved skips are passed to Claude, which suggests a makeup if recovery looks good.
+- `/done [how you felt]` — fetches your latest Strava activity and asks Claude for feedback. Optionally add a note on how you felt.
 - `/setrace YYYY-MM-DD` — generates a 12-week training calendar counting back from your race date.
 - Free chat — talk to your coach anytime. Remembers the morning brief for the rest of the day.
 

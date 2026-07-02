@@ -134,3 +134,24 @@ async def skip(update, context):
     add_skip(workout_id, reason)
     logger.info("Workout %s skipped, reason: %s", workout_id, reason)
     await update.message.reply_text("Skipped todays workout! We will make up for it!")
+
+async def done(update, context):
+    activty = get_activities()
+    if context.args:
+        notes = f"This is how I felt during the activity: {' '.join(context.args)}"
+    else:
+        notes = ""
+    conversation.append({"role": "user", "content": f"Here is my activity stats from Strava: {activty}. {notes}"})
+    try:
+        response = await client_claude.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=1024,
+            system="You are a helpful triathlon coach. Your athlete just completed his activity, please give him some feedback on how he performed!",
+            messages=conversation
+        )
+    except anthropic.APIError as e:
+        logger.error("Claude API error in respond: %s", e)
+        await update.message.reply_text("Could not reach Claude. Try again later.")
+        return
+    conversation.append({"role": "assistant", "content": response.content[0].text})
+    await context.bot.send_message(chat_id=update.effective_chat.id, text=response.content[0].text)
