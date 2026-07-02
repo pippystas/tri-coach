@@ -6,6 +6,7 @@ from dotenv import set_key
 logger = logging.getLogger(__name__)
 
 url_strava_activities = "https://www.strava.com/api/v3/athlete/activities"
+url_strava_activity = "https://www.strava.com/api/v3/activities"
 url_strava_token = "https://www.strava.com/oauth/token"
 
 def generate_calendar(race_date: str) -> dict[str, str]:
@@ -63,7 +64,7 @@ def get_strava_access_token() -> str:
     return response['access_token']
 
 def trim_strava_activities(activities: list[dict]) -> list[dict]:
-    fields = ["name", "type", "distance", "moving_time", "average_heartrate", "suffer_score", "start_date", "average_speed"]
+    fields = ["id", "name", "type", "distance", "moving_time", "average_heartrate", "suffer_score", "average_speed"]
     trimmed = []
     for activity in activities:
         trimmed.append({field: activity.get(field) for field in fields})
@@ -126,3 +127,14 @@ def resolve_skips(activities: list[dict]) -> list[dict]:
     with open('calendar.json', 'w') as file:
         json.dump(calendar, file)
     return skipped_workouts
+
+def get_activity_laps(activity_id: int) -> list[dict]:
+    logger.info("Fetching laps for activity %d", activity_id)
+    STRAVA_ACCESS_TOKEN = get_strava_access_token()
+    response = requests.get(
+        f"{url_strava_activity}/{activity_id}/laps",
+        headers={"Authorization": f"Bearer {STRAVA_ACCESS_TOKEN}"},
+    )
+    fields = ["name", "elapsed_time", "distance", "average_speed", "average_heartrate", "average_cadence"]
+    laps = response.json()
+    return [{field: lap.get(field) for field in fields} for lap in laps]

@@ -1,7 +1,7 @@
 import json, anthropic, os, logging
 import requests
 from garminconnect import Garmin, GarminConnectAuthenticationError, GarminConnectConnectionError, GarminConnectTooManyRequestsError
-from helpers import generate_calendar, get_workout_id, get_workout_details, get_activities, get_brief, get_garmin_data, add_skip, resolve_skips
+from helpers import generate_calendar, get_workout_id, get_workout_details, get_activities, get_brief, get_garmin_data, add_skip, resolve_skips, get_activity_laps
 
 logger = logging.getLogger(__name__)
 
@@ -137,11 +137,12 @@ async def skip(update, context):
 
 async def done(update, context):
     activty = get_activities()
+    laps = get_activity_laps(activty[0]['id'])
     if context.args:
         notes = f"This is how I felt during the activity: {' '.join(context.args)}"
     else:
         notes = ""
-    conversation.append({"role": "user", "content": f"Here is my activity stats from Strava: {activty}. {notes}"})
+    conversation.append({"role": "user", "content": f"Here is my activity stats from Strava: {activty}. And here are the laps: {laps}. {notes}"})
     try:
         response = await client_claude.messages.create(
             model="claude-sonnet-4-6",
